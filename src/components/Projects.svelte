@@ -1,14 +1,14 @@
 <script>
-    import ProjectForm from "./ProjectForm.svelte"
-    import Project from "./Project.svelte"
+    import ProjectForm from "./ProjectForm.svelte";
+    import Project from "./Project.svelte";
     import {db} from "../firebase.js"
-    export let getCountryData
-    export let getCategoryData
-    const projects = db.collection("projects") 
+    export let getCountryData;
+    export let getCategoryData;
+    const projects = db.collection("projects"); 
 
-    let menuItem = 1
+    let menuItem = 1;
 
-    let projectArray = []
+    let projectArray = [];
 
     projects.onSnapshot(snap => {
         projectArray = snap.docs

@@ -1,5 +1,6 @@
 <script>
-	import CountriesCategories from "./components/CountriesCategories.svelte"
+	import Projects from "./components/Projects.svelte";
+	import {getCountryData, getCategoryData} from "./utils/handle-data.js";
 </script>
 
-<CountriesCategories />
+<Projects getCountryData={getCountryData()} getCategoryData={getCategoryData()}/>
