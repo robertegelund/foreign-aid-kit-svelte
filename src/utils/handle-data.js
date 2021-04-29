@@ -4,7 +4,7 @@ import {db} from "../firebase.js";
 const countries = db.collection("countries");
 const categories = db.collection("categories");
 
-// Push country example data into database
+// Push country example data to database
 for(const country of countryData) {
     countries
         .doc(country.id)
@@ -16,7 +16,7 @@ for(const country of countryData) {
     })
 }
 
-// Push category example data into database
+// Push category example data to database
 for(const category of categoryData) {
     categories.add({
         name: category.name,
