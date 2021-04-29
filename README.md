@@ -1,8 +1,9 @@
-# Foreign Aid Kit - A Svelte Project
-* The Foreign Aid Kit project is made with the goal of making foreign aid transfers more transparent.
-* In this solution the user can view, add, modify and delete foreign aid data.
+# Foreign Aid Kit
 
-## Get started
+* The Foreign Aid Kit project is made with the goal of making foreign aid transfers more transparent.
+* In this early prototype the user can view, add, modify and delete data on foreign aid transfers.
+
+## Get started with this Svelte project
 
 1) Please insert your own Firebase Configuration settings in ./src/firebase.js 
 
