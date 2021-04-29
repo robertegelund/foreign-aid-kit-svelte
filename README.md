@@ -1,4 +1,6 @@
-# foreign-aid-kit-svelte
+# Foreign Aid Kit - A Svelte Project
+* The Foreign Aid Kit project is made with the goal of making foreign aid transfers more transparent.
+* In this solution the user can view, add, modify and delete foreign aid data.
 
 ## Get started
 
