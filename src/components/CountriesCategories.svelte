@@ -1,9 +1,10 @@
 <script>
-    import {db} from "../firebase.js"
-    import Projects from "./Projects.svelte"
-    const countries = db.collection("countries")
-    const categories = db.collection("categories")
+    import {db} from "../firebase.js";
+    import Projects from "./Projects.svelte";
+    const countries = db.collection("countries");
+    const categories = db.collection("categories");
   
+    // Country example data
     const countriesArray = [
         {
             "id": "TZA",
@@ -18,8 +19,9 @@
             "received": 0
         }
     ]
-
-    /* for(const country of countriesArray) {
+    
+    // Load country example data into database
+    for(const country of countriesArray) {
         countries
             .doc(country.id)
             .set({
@@ -28,7 +30,7 @@
                 sent: country.sent,
                 received: country.received
         })
-    } */
+    }
 
     let countryArray = []
     const getCountryData = async () => {
@@ -37,6 +39,7 @@
         return countryArray
     }
     
+    // Category example data
     const categoryData = [
         {
             "name": "Economic Development and Trade",
@@ -64,12 +67,13 @@
         }
     ]
 
-     /* for(const category of categoryData) {
+    // Load category example data into database
+    for(const category of categoryData) {
         categories.add({
             name: category.name,
             description: category.description
         })
-    } */
+    }
 
     let categoryArray = []
     const getCategoryData = async () => {
